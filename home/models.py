@@ -40,3 +40,15 @@ class Demo(models.Model):
     demo_key = models.CharField(
         max_length=256,
     )
+
+
+class Student(models.Model):
+    "Generated Model"
+    name = models.BigIntegerField()
+
+
+class Book(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
