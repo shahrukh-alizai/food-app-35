@@ -10,6 +10,13 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    link = models.ForeignKey(
+        "home.Student",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_link",
+    )
 
     def __str__(self):
         return self.title
@@ -45,3 +52,8 @@ class Demo(models.Model):
 class Profile(models.Model):
     "Generated Model"
     image = models.URLField()
+
+
+class Student(models.Model):
+    "Generated Model"
+    name = models.BigIntegerField()
