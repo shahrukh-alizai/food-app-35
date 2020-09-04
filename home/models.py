@@ -45,10 +45,3 @@ class Demo(models.Model):
 class Student(models.Model):
     "Generated Model"
     name = models.BigIntegerField()
-
-
-class Book(models.Model):
-    "Generated Model"
-    name = models.CharField(
-        max_length=256,
-    )
