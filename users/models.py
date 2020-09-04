@@ -13,9 +13,9 @@ class User(AbstractUser):
     )
     std = models.ForeignKey(
         "home.Student",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_std",
     )
 

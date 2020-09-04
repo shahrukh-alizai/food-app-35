@@ -45,3 +45,8 @@ class Demo(models.Model):
 class Student(models.Model):
     "Generated Model"
     name = models.BigIntegerField()
+
+
+class Profile(models.Model):
+    "Generated Model"
+    image = models.URLField()
